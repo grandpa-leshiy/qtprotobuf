@@ -70,4 +70,5 @@ class QGrpcCallReply;
 class QGrpcStream;
 using QGrpcCallReplyShared = std::shared_ptr<QGrpcCallReply>;
 using QGrpcStreamShared = std::shared_ptr<QGrpcStream>;
+using StreamHandler = std::function<void(const QByteArray&)>;
 }
